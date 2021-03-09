@@ -1,0 +1,95 @@
+
+
+@inproceedings{Kumar2,
+author = {Kumar, Rajath and Vadhiyar, Sathish},
+year = {2014},
+month = {05},
+pages = {108-128},
+title = {Prediction of Queue Waiting Times for Metascheduling on Parallel Batch Systems},
+isbn = {978-3-319-15788-7},
+doi = {10.1007/978-3-319-15789-4_7}
+}
+
+@article{Cunha,
+title = {Job placement advisor based on turnaround predictions for HPC hybrid clouds},
+journal = {Future Generation Computer Systems},
+volume = {67},
+pages = {35-46},
+year = {2017},
+issn = {0167-739X},
+doi = {https://doi.org/10.1016/j.future.2016.08.010},
+url = {https://www.sciencedirect.com/science/article/pii/S0167739X16302655},
+author = {Renato L.F. Cunha and Eduardo R. Rodrigues and Leonardo P. Tizzei and 
+Marco A.S. Netto},
+keywords = {HPC, Cloud computing, Hybrid cloud, Machine learning, Advisory syste
+m, Runtime and wait time predictions},
+abstract = {Several companies and research institutes are moving their CPU-inten
+sive applications to hybrid High Performance Computing (HPC) cloud environments.
+ Such a shift depends on the creation of software systems that help users decide
+ where a job should be placed considering execution time and queue wait time to 
+access on-premise clusters. Relying blindly on turnaround prediction techniques 
+will affect negatively response times inside HPC cloud environments. This paper 
+introduces a tool to make job placement decisions in HPC hybrid cloud environmen
+ts taking into account the inaccuracy of execution and waiting time predictions.
+ We used job traces from real supercomputing centers to run our experiments, and
+ compared the performance between environments using real speedup curves. We als
+o extended a state-of-the-art machine learning based predictor to work with data
+ from the cluster scheduler. Our main findings are as follows: (i) depending on 
+workload characteristics, there is a turning point where predictions should be d
+isregarded in favor of a more conservative decision to minimize job turnaround t
+imes and (ii) scheduler data plays a key role in improving predictions generated
+ with machine learning using job trace data—our experiments showed around 20% pr
+ediction accuracy improvements.}
+}
+
+@InProceedings{Kumar1,
+author="Kumar, Rajath
+and Vadhiyar, Sathish",
+editor="Cirne, Walfredo
+and Desai, Narayan
+and Frachtenberg, Eitan
+and Schwiegelshohn, Uwe",
+title="Identifying Quick Starters: Towards an Integrated Framework for Efficient
+ Predictions of Queue Waiting Times of Batch Parallel Jobs",
+booktitle="Job Scheduling Strategies for Parallel Processing",
+year="2013",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="196--215",
+abstract="Production parallel systems are space-shared and hence employ batch qu
+eues in which the jobs submitted to the systems are made to wait before executio
+n. Thus, jobs submitted to parallel batch systems incur queue waiting times in a
+ddition to the execution times. Prediction of these queue waiting times is impor
+tant to provide overall estimates to the users and can also help metaschedulers 
+make scheduling decisions. Analyses of the job traces of supercomputers reveal t
+hat about 56 to 99{\%} of the jobs incur queue waiting times of less than an hou
+r. Hence, identifying these quick starters or jobs with short queue waiting time
+s is essential for overall improvement on queue waiting time predictions. Existi
+ng strategies provide high overestimates of upper bounds of queue waiting times 
+rendering the bounds less useful for jobs with short queue waiting times. In thi
+s work, we have developed an integrated framework that uses the job characterist
+ics, and states of the queue and processor occupancy to identify and predict qui
+ck starters, and use the existing strategies to predict jobs with long queue wai
+ting times. Our experiments with different production supercomputer job traces s
+how that our prediction strategies can lead to correct identification of up to 2
+0 times more quick starters and provide tighter bounds for these jobs, and thus 
+result in up to 64{\%} higher overall prediction accuracy than existing methods.
+",
+isbn="978-3-642-35867-8"
+}
+
+
+@article{Murali,
+author = {Murali, Prakash and Vadhiyar, Sathish},
+title = {Qespera: an adaptive framework for prediction of queue waiting times in supercomputer systems},
+journal = {Concurrency and Computation: Practice and Experience},
+volume = {28},
+number = {9},
+pages = {2685-2710},
+keywords = {queue waiting time, batch queue, scheduling in supercomputers},
+doi = {https://doi.org/10.1002/cpe.3735},
+url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/cpe.3735},
+eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/cpe.3735},
+abstract = {Summary Production parallel systems are space-shared, and resource allocation on such systems is usually performed using a batch queue scheduler. Jobs submitted to the batch queue experience a variable delay before the requested resources are granted. Predicting this delay can assist users in planning experiment time-frames and choosing sites with less turnaround times and can also help meta-schedulers make scheduling decisions. In this paper, we present an integrated adaptive framework, Qespera, for prediction of queue waiting times on parallel systems. We propose a novel algorithm based on spatial clustering for predictions using history of job submissions and executions. The framework uses adaptive set of strategies for choosing either distributions or summary of features to represent the system state and to compare with history jobs, varying the weights associated with the features for each job prediction, and selecting a particular algorithm dynamically for performing the prediction depending on the characteristics of the target and history jobs. Our experiments with real workload traces from different production systems demonstrate up to 22\% reduction in average absolute error and up to 56\% reduction in percentage prediction error over existing techniques. We also report prediction errors of less than 1 h for a majority of the jobs. Copyright © 2015 John Wiley \& Sons, Ltd.},
+year = {2016}
+}
